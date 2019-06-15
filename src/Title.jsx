@@ -7,7 +7,7 @@ const Title = (props) => {
   return(
     <React.Fragment>
       <h1 className="clickable" onClick={() => setPage(HOME)}>Hilary and Adam</h1>
-      <h3>July 22, 2022 - East Glacier, MT</h3>
+      <h3>July 22, 2022 - East Glacier Park, Montana</h3>
     </React.Fragment>
   )
 }
