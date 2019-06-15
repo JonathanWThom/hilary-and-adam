@@ -5,9 +5,16 @@ import {
   ACTIVITIES,
   CEREMONY,
   GALLERY,
-  HOME,
   REGISTRY
-} from "./Constants"
+} from "./Constants";
+import Accommodations from "./Accommodations";
+import Activities from "./Activities";
+import Ceremony from "./Ceremony";
+import Gallery from "./Gallery";
+import Home from "./Home";
+import Navigation from "./Navigation";
+import Registry from "./Registry";
+import Title from "./Title";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -15,25 +22,43 @@ export default class App extends React.Component {
     this.state = { page: "home" };
   }
 
-  render() {
+  getPage = () => {
     const { page } = this.state;
+    switch(page) {
+      case CEREMONY:
+        return <Ceremony />;
+      case ACCOMMODATIONS:
+        return <Accommodations />;
+      case ACTIVITIES:
+        return <Activities />;
+      case REGISTRY:
+        return <Registry />;
+      case GALLERY:
+        return <Gallery />;
+      default:
+        return <Home />;
+    }
+  }
 
+  setPage = (page) => {
+    this.setState({page: page})
+  }
+
+  render() {
     return (
       <React.Fragment>
         <header>
-          <h1 className="clickable" onClick={() => this.setState({page: HOME})}>Hilary and Adam</h1>
-          <h3>July 22, 2022 - East Glacier, MT</h3>
+          <Title setPage={this.setPage} />
           <nav>
-            <button onClick={() => this.setState({page: CEREMONY})}>Ceremony</button>
-            <button onClick={() => this.setState({page: ACCOMMODATIONS})}>Accomodations</button>
-            <button onClick={() => this.setState({page: ACTIVITIES})}>Activities</button>
-            <button onClick={() => this.setState({page: REGISTRY})}>Registry</button>
-            <button onClick={() => this.setState({page: GALLERY})}>Gallery</button>
+            <Navigation setPage={this.setPage}/>
           </nav>
         </header>
         <section>
-          { page }
+          { this.getPage() }
         </section>
+        <footer>
+          The footer goes here
+        </footer>
       </React.Fragment>
     );
   }
