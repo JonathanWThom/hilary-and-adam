@@ -74,9 +74,6 @@ export default class App extends React.Component {
         <section>
           { this.getPage() }
         </section>
-        <footer>
-          The footer goes here
-        </footer>
       </React.Fragment>
     );
   }
