@@ -21,7 +21,10 @@ import Title from "./Title";
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { page: "home" };
+    this.state = {
+      page: "home",
+      formComplete: false,
+    };
   }
 
   getPage = () => {
@@ -30,7 +33,12 @@ export default class App extends React.Component {
       case CEREMONY:
         return <Ceremony />;
       case RSVP:
-        return <Rsvp />;
+        return(
+          <Rsvp
+            formComplete={this.state.formComplete}
+            setFormComplete={this.setFormComplete}
+          />
+        )
       case ACCOMMODATIONS:
         return <Accommodations />;
       case ACTIVITIES:
@@ -46,6 +54,10 @@ export default class App extends React.Component {
 
   setPage = (page) => {
     this.setState({page: page})
+  }
+
+  setFormComplete = () => {
+    this.setState({formComplete: true})
   }
 
   render() {

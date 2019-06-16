@@ -10,7 +10,13 @@ const encode = (data) => {
 export default class Rsvp extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { name: "", coming: "yes", howMany: 0, notes: "" };
+    this.state = {
+      name: "",
+      coming: "yes",
+      howMany: "",
+      notes: "",
+      formComplete: false,
+    };
   }
 
   handleSubmit = e => {
@@ -19,7 +25,7 @@ export default class Rsvp extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "rsvp", ...this.state })
     })
-    .then(() => alert("Success!"))
+    .then(() => this.handleSuccess())
     .catch(error => alert(error));
 
     e.preventDefault();
@@ -27,66 +33,82 @@ export default class Rsvp extends React.Component {
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
+  handleSuccess = () => {
+    const { setFormComplete } = this.props;
+    setFormComplete();
+  }
+
   render() {
     const { name, coming, howMany, notes } = this.state;
+    const { formComplete } = this.props;
 
-    return(
-      <form onSubmit={this.handleSubmit}>
-        <input type="hidden" name="rsvp" value="contact" />
-        <p>
-          <label>Name (as it appears on invitation)
+    if (formComplete) {
+      return(
+        <h3>Thank you for your response!</h3>
+      )
+    } else {
+      return(
+        <form onSubmit={this.handleSubmit}>
+          <input type="hidden" name="rsvp" value="contact" />
+          <p>
+            <label>Name (as it appears on invitation)
+              <input
+                type="text"
+                name="name"
+                value={name}
+                onChange={this.handleChange}
+                required
+              />
+            </label>
+          </p>
+          <p>
+            <label>Can you make it? </label>
             <input
-              type="text"
-              name="name"
-              value={name}
+              type="radio"
+              id="yes"
+              name="coming"
+              value="yes"
+              checked={coming === "yes"}
               onChange={this.handleChange}
+              required
             />
-          </label>
-        </p>
-        <p>
-          <label>Can you make it? </label>
-          <input
-            type="radio"
-            id="yes"
-            name="coming"
-            value="yes"
-            checked={coming === "yes"}
-            onChange={this.handleChange}
-          />
-          <label>Yes</label>
-          <input
-            type="radio"
-            id="no"
-            name="coming"
-            value="no"
-            checked={coming === "no"}
-            onChange={this.handleChange}
-          />
-          <label>No</label>
-        </p>
-        <p>
-          <label>How many in your party?
+            <label>Yes</label>
             <input
-              type="number"
-              name="howMany"
-              value={howMany}
+              type="radio"
+              id="no"
+              name="coming"
+              value="no"
+              checked={coming === "no"}
               onChange={this.handleChange}
+              required
             />
-          </label>
-        </p>
-        <p>
-          <label>Any extra notes (food allergies, etc)
-            <textarea
-              name="notes"
-              value={notes}
-              onChange={this.handleChange}
-            />
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
-    )
+            <label>No</label>
+          </p>
+          <p>
+            <label>How many in your party?
+              <input
+                type="number"
+                name="howMany"
+                value={howMany}
+                onChange={this.handleChange}
+                required
+              />
+            </label>
+          </p>
+          <p>
+            <label>Any extra notes (food allergies, etc)
+              <textarea
+                name="notes"
+                value={notes}
+                onChange={this.handleChange}
+              />
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      )
+    }
   }
 }
