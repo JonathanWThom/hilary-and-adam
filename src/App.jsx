@@ -5,7 +5,8 @@ import {
   ACTIVITIES,
   CEREMONY,
   PHOTOS,
-  REGISTRY
+  REGISTRY,
+  RSVP,
 } from "./Constants";
 import Accommodations from "./Accommodations";
 import Activities from "./Activities";
@@ -14,6 +15,7 @@ import Home from "./Home";
 import Navigation from "./Navigation";
 import Photos from "./Photos";
 import Registry from "./Registry";
+import Rsvp from "./Rsvp";
 import Title from "./Title";
 
 export default class App extends React.Component {
@@ -27,6 +29,8 @@ export default class App extends React.Component {
     switch(page) {
       case CEREMONY:
         return <Ceremony />;
+      case RSVP:
+        return <Rsvp />;
       case ACCOMMODATIONS:
         return <Accommodations />;
       case ACTIVITIES:
