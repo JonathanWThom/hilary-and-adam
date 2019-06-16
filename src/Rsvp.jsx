@@ -44,7 +44,7 @@ export default class Rsvp extends React.Component {
 
     if (formComplete) {
       return(
-        <h3>Thank you for your response!</h3>
+        <h3>Thank you for your response! If you made a mistake, you can always refresh and resubmit.</h3>
       )
     } else {
       return(
