@@ -1,14 +1,15 @@
 import React from "react";
 import { HOME } from "./Constants";
+import "./Title.css";
 
 const Title = (props) => {
   const { setPage } = props;
 
   return(
-    <React.Fragment>
-      <h1 className="clickable" onClick={() => setPage(HOME)}>Hilary and Adam</h1>
-      <h3>July 22, 2022 - East Glacier Park, Montana</h3>
-    </React.Fragment>
+    <div className="title">
+      <h1 className="clickable" onClick={() => setPage(HOME)}>Hilary &amp; Adam</h1>
+      <h3>July 22, 2020 - East Glacier Park, MT</h3>
+    </div>
   )
 }
 

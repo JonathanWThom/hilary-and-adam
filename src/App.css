@@ -8,11 +8,15 @@ html {
 
 body {
   position: relative;
-  padding-bottom: 6rem;
   min-height: 100%;
 }
 
-.footer {
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+footer {
   position: absolute;
   right: 0;
   bottom: 0;
