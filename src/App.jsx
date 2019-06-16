@@ -4,15 +4,15 @@ import {
   ACCOMMODATIONS,
   ACTIVITIES,
   CEREMONY,
-  GALLERY,
+  PHOTOS,
   REGISTRY
 } from "./Constants";
 import Accommodations from "./Accommodations";
 import Activities from "./Activities";
 import Ceremony from "./Ceremony";
-import Gallery from "./Gallery";
 import Home from "./Home";
 import Navigation from "./Navigation";
+import Photos from "./Photos";
 import Registry from "./Registry";
 import Title from "./Title";
 
@@ -33,8 +33,8 @@ export default class App extends React.Component {
         return <Activities />;
       case REGISTRY:
         return <Registry />;
-      case GALLERY:
-        return <Gallery />;
+      case PHOTOS:
+        return <Photos />;
       default:
         return <Home />;
     }

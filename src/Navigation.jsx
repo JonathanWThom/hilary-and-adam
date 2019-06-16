@@ -3,8 +3,9 @@ import {
   ACCOMMODATIONS,
   ACTIVITIES,
   CEREMONY,
-  GALLERY,
-  REGISTRY
+  PHOTOS,
+  REGISTRY,
+  RSVP
 } from "./Constants"
 
 const Navigation = (props) => {
@@ -13,10 +14,11 @@ const Navigation = (props) => {
   return(
     <React.Fragment>
       <button onClick={() => setPage(CEREMONY)}>Ceremony</button>
+      <button onClick={() => setPage(RSVP)}>RSVP</button>
       <button onClick={() => setPage(ACCOMMODATIONS)}>Accomodations</button>
       <button onClick={() => setPage(ACTIVITIES)}>Activities</button>
       <button onClick={() => setPage(REGISTRY)}>Registry</button>
-      <button onClick={() => setPage(GALLERY)}>Gallery</button>
+      <button onClick={() => setPage(PHOTOS)}>Gallery</button>
     </React.Fragment>
   )
 }
