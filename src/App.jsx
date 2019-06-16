@@ -61,12 +61,14 @@ export default class App extends React.Component {
   }
 
   render() {
+    const { page } = this.state;
+
     return (
       <React.Fragment>
-        <header>
+        <header className="header">
           <Title setPage={this.setPage} />
           <nav>
-            <Navigation setPage={this.setPage}/>
+            <Navigation page={page} setPage={this.setPage}/>
           </nav>
         </header>
         <section>

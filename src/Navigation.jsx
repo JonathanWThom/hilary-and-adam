@@ -1,4 +1,5 @@
 import React from "react";
+import "./Navigation.css";
 import {
   ACCOMMODATIONS,
   ACTIVITIES,
@@ -9,16 +10,36 @@ import {
 } from "./Constants"
 
 const Navigation = (props) => {
- const { setPage } = props;
+  const className = (pageToCheck) => {
+    if (props.page === pageToCheck) {
+      return "nav-link active-nav";
+    }
+
+    return "nav-link";
+  }
+
+  const { setPage } = props;
 
   return(
     <React.Fragment>
-      <button onClick={() => setPage(CEREMONY)}>Ceremony</button>
-      <button onClick={() => setPage(RSVP)}>RSVP</button>
-      <button onClick={() => setPage(ACCOMMODATIONS)}>Accomodations</button>
-      <button onClick={() => setPage(ACTIVITIES)}>Activities</button>
-      <button onClick={() => setPage(REGISTRY)}>Registry</button>
-      <button onClick={() => setPage(PHOTOS)}>Gallery</button>
+      <h4 className={className(CEREMONY)} onClick={() => setPage(CEREMONY)}>
+        Ceremony
+      </h4>
+      <h4 className={className(RSVP)} onClick={() => setPage(RSVP)}>
+        RSVP
+      </h4>
+      <h4 className={className(ACCOMMODATIONS)} onClick={() => setPage(ACCOMMODATIONS)}>
+        Accomodations
+      </h4>
+      <h4 className={className(ACTIVITIES)} onClick={() => setPage(ACTIVITIES)}>
+        Activities
+      </h4>
+      <h4 className={className(REGISTRY)} onClick={() => setPage(REGISTRY)}>
+        Registry
+      </h4>
+      <h4 className={className(PHOTOS)} onClick={() => setPage(PHOTOS)}>
+        Gallery
+      </h4>
     </React.Fragment>
   )
 }

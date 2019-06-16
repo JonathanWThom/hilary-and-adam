@@ -11,9 +11,10 @@ body {
   min-height: 100%;
 }
 
-header {
+.header {
   text-align: center;
   padding: 20px;
+  max-width: 100vw;
 }
 
 header h1 {
