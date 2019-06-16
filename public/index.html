@@ -10,6 +10,25 @@
     <title>Hilary &amp; Adam</title>
   </head>
   <body>
+    <form name="rsvp" netlify hidden>
+      <p>
+        <label>Name (as it appears on invitation) <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Can you make it? </label>
+        <input type="radio" id="yes" name="coming" value="yes"
+               checked />
+             <label for="yes">Yes</label>
+        <input type="radio" id="no" name="coming" value="no" />
+        <label for="no">No</label>
+      </p>
+      <p>
+        <label>How many in your party? <input type="number" name="howMany" /></label>
+      </p>
+      <p>
+        <label>Any extra notes (food allergies, etc): <textarea name="notes"></textarea></label>
+      </p>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>

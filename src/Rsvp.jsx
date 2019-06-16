@@ -3,6 +3,7 @@ import React from "react";
 const Rsvp = () => {
   return(
     <form name="rsvp" method="POST" netlify>
+      <input type="hidden" name="rsvp" value="contact" />
       <p>
         <label>Name (as it appears on invitation) <input type="text" name="name" /></label>
       </p>
