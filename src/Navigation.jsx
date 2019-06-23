@@ -23,7 +23,7 @@ const Navigation = (props) => {
   return(
     <React.Fragment>
       <h4 className={className(CEREMONY)} onClick={() => setPage(CEREMONY)}>
-        Ceremony
+        Ceremony &amp; Reception
       </h4>
       <h4 className={className(RSVP)} onClick={() => setPage(RSVP)}>
         RSVP

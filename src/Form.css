@@ -1,0 +1,27 @@
+.form {
+  max-width: 40vw;
+}
+
+.form__rsvp {
+  margin-top: 1.25em;
+}
+
+.form__rsvp input[type="number"] {
+  max-width: 60px;
+}
+
+.form__rsvp input[type="radio"] {
+  margin-left: 5px;
+}
+
+.form__rsvp .form__rsvp--radio-label {
+  margin-bottom: 1em;
+}
+
+.form__rsvp .label__radio {
+  margin-right: 10px;
+}
+
+.form__rsvp label {
+  font-weight: bold;
+}
