@@ -19,3 +19,7 @@
 .display-inline {
   display: inline;
 }
+
+.top-margin {
+  margin-top: 1.25em;
+}
