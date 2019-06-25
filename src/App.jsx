@@ -71,7 +71,7 @@ export default class App extends React.Component {
             <Navigation page={page} setPage={this.setPage}/>
           </nav>
         </header>
-        <section>
+        <section className="main-section">
           { this.getPage() }
         </section>
       </React.Fragment>

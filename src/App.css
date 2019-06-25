@@ -1,3 +1,6 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 .clickable {
   cursor: pointer;
 }
@@ -12,6 +15,11 @@
   margin-top: 0;
 }
 
+section.main-section {
+  margin-bottom: 1.25em;
+}
+
+/* Helpers */
 .text-align-center {
   text-align: center;
 }

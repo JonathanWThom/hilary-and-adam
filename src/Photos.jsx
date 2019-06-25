@@ -17,7 +17,7 @@ const Photos = () => {
   };
 
   return (
-    <div>
+    <div className="top-margin">
       <Gallery photos={IMAGES} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (

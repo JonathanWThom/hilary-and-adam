@@ -1,4 +1,4 @@
-const blahs = [
+const hotels = [
   {
     name: "Glacier Park Lodge",
     website: "https://www.glacierparkcollection.com/lodging/glacier-park-lodge/",
@@ -61,4 +61,4 @@ const blahs = [
   }
 ];
 
-export default blahs;
+export default hotels;
