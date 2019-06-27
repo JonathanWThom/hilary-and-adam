@@ -7,8 +7,8 @@ export default class Activities extends React.Component {
   getActivities = () => {
     return thingsToDo.map(thing => {
       return (
-        <div className="activities__image-container">
-          <img className="activities__image" src={thing.imageUrl} alt={thing.name}/>
+        <div key={thing.name} className="activities__image-container">
+          <img className="activities__image" src={thing.src} alt={thing.name}/>
           <div className="activities__image-content">
             <h3>
               <a href={thing.website}>
