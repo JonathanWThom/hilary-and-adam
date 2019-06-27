@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import thingsToDo from "./thingsToDo.js";
 import "./Activities.css";
 
-export default class Activities extends React.Component {
-  getActivities = () => {
+const Activities = () => {
+  function getActivities() {
     return thingsToDo.map(thing => {
       return (
         <div key={thing.name} className="activities__image-container">
@@ -24,19 +24,19 @@ export default class Activities extends React.Component {
     })
   }
 
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
 
-    return (
-      <Slider className="activities top-margin text-align-center" {...settings}>
-        { this.getActivities() }
-      </Slider>
-    );
-  }
+  return (
+    <Slider className="activities top-margin text-align-center" {...settings}>
+      { getActivities() }
+    </Slider>
+  );
 }
+
+export default Activities;
