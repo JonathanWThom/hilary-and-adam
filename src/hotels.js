@@ -48,6 +48,24 @@ const hotels = [
     cost: "$$",
   },
   {
+    name: "Summit Mountain Lodge",
+    website: "https://summitmtnlodge.com/lodging-glacier-national-park/family-cabins-glacier/",
+    notes: "Cabins",
+    cost: "$$$",
+  },
+  {
+    name: "Moutain Pine Hotel",
+    website: "https://www.mtnpine.com/book-your-stay-2",
+    notes: "Rooms",
+    cost: "$$",
+  },
+  {
+    name: "Bear on the Roof Realty",
+    website: "http://www.bearontheroof.com/",
+    notes: "Rental properties available",
+    cost: "$-$$$$",
+  },
+  {
     name: "AirBnB",
     website: "ttps://www.airbnb.com/s/East-Glacier-Park-Village--MT--United-States/homes?query=East%20Glacier%20Park%20Village%2C%20MT%2C%20United%20States&place_id=ChIJf-MKmu2NaFMR0U2YbMroYRk&click_referer=t%3ASEE_ALL%7Csid%3A0a62a454-0528-4f03-96b8-c0a09165e7a0%7Cst%3AMAGAZINE_HOMES&title_type=MAGAZINE_HOMES&refinement_paths%5B%5D=%2Fhomes&search_type=SECTION_NAVIGATION&allow_override%5B%5D=&s_tag=aLrKre3x",
     notes: "",
