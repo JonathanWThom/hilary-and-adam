@@ -1,3 +1,30 @@
 .activities .activities__image {
-  max-width: 60vw;
+  width: 60vw;
+}
+
+.activities .activities__image-container {
+  position: relative;
+  max-width: 60vw; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.activities .activities__image-content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.75); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 60vw; /* Full width */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.activities .activitives__image-content h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+.slick-dots {
+  position: inherit;
+  bottom: inherit;
+  margin: 0 0 1.25em 0;
 }

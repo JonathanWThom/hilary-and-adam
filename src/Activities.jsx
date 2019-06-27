@@ -1,22 +1,22 @@
 import React from "react";
 import Slider from "react-slick";
-import activities from "./activities.js";
+import thingsToDo from "./thingsToDo.js";
 import "./Activities.css";
 
 export default class Activities extends React.Component {
   getActivities = () => {
-    return activities.map(activity => {
+    return thingsToDo.map(thing => {
       return (
-        <div>
-          <img className="activities__image" src={activity.imageUrl} alt={activity.name}/>
-          <div>
+        <div className="activities__image-container">
+          <img className="activities__image" src={thing.imageUrl} alt={thing.name}/>
+          <div className="activities__image-content">
             <h3>
-              <a href={activity.website}>
-                {activity.name}
+              <a href={thing.website}>
+                {thing.name}
               </a>
             </h3>
             <p>
-              {activity.notes}
+              {thing.notes}
             </p>
           </div>
         </div>

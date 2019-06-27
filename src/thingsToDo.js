@@ -1,4 +1,4 @@
-const activities = [
+const thingsToDo = [
   {
     name: "Hike Two Medicine",
     website: "https://www.nps.gov/glac/planyourvisit/hikingtwomedicine.htm",
@@ -49,4 +49,4 @@ const activities = [
   }
 ];
 
-export default activities;
+export default thingsToDo;
