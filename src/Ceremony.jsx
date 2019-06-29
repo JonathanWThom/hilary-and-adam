@@ -9,8 +9,6 @@ const Ceremony = (props) => {
       <section className="map__container">
         <iframe
           title="Map to Glacier Park Lodge"
-          width="600"
-          height="450"
           frameBorder="0"
           src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ8b6sx1ZAZlMRYtFBx5_LVOs&key=AIzaSyAZFvNwSQZiqtBmIO6CGR4AMJ5I_JEexVU"
           allowFullScreen>
