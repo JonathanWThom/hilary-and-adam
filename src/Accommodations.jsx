@@ -1,5 +1,6 @@
 import React from "react";
 import hotels from "./hotels.js";
+import "./Accommodations.css";
 
 const Accommodations = (props) => {
   const tableBody = () => {
@@ -19,12 +20,11 @@ const Accommodations = (props) => {
   }
 
   return(
-    <div className="text-align-center top-margin">
-      <table>
+    <div className="accommodations text-align-center top-margin">
+      <table className="accommodations__table">
         <thead>
           <tr>
             <th>Name</th>
-            <th>Website</th>
             <th>Cost</th>
             <th>Notes</th>
           </tr>
