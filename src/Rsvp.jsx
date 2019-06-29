@@ -7,7 +7,6 @@ const encode = (data) => {
     .join("&");
 }
 
-
 export default class Rsvp extends React.Component {
   constructor(props) {
     super(props);
@@ -45,7 +44,7 @@ export default class Rsvp extends React.Component {
 
     if (formComplete) {
       return(
-        <h3 className="text-align-center">
+        <h3 className="rsvp__response text-align-center">
           Thank you for your response! If you made a mistake, you can always refresh and resubmit.
         </h3>
       )

@@ -25,3 +25,13 @@
 .form__rsvp label {
   font-weight: bold;
 }
+
+@media only screen and (max-width: 600px) {
+  .form {
+    max-width: 90vw;
+  }
+
+  .rsvp__response {
+    padding: 0 10px;
+  }
+}
