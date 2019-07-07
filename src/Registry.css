@@ -10,3 +10,14 @@
 .registry .registry__image {
   max-width: 20vw;
 }
+
+@media only screen and (max-width: 768px) {
+  .registry .registry__item {
+    display: block;
+    margin: 0;
+  }
+
+  .registry .registry__image {
+    max-width: 90vw;
+  }
+}
