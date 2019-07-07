@@ -17,4 +17,4 @@ ENTRYPOINT ["/bin/bash", "/app/run.sh"]
 CMD ["start"]
 
 # https://www.peterbe.com/plog/how-to-create-react-app-with-docker
-# docker container run -it -p 3000:3000 -p 35729:35729 -v $(pwd):/app hilary-and-adam
+# docker container run -it -p 3000:3000 -p 35729:35729 -v $(pwd):/app jonathanwthom/hilary-and-adam

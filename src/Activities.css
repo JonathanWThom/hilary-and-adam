@@ -28,3 +28,10 @@
   bottom: inherit;
   margin: 0 0 1.25em 0;
 }
+
+@media only screen and (max-width: 768px) {
+  .activities .activities__image, .activities .activities__image-container, .activities .activities__image-content {
+    max-width: 90vw;
+    width: 90vw;
+  }
+}
