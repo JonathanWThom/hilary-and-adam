@@ -12,3 +12,17 @@
 .nav-link.active-nav {
   color: #d68a41;
 }
+
+.nav__mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav__mobile {
+    display: block;
+  }
+
+  .nav__main {
+    display: none;
+  }
+}
