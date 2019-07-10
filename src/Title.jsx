@@ -8,7 +8,7 @@ const Title = (props) => {
   return(
     <div className="title">
       <h1 className="clickable" onClick={() => setPage(HOME)}>Hilary &amp; Adam</h1>
-      <h3>July 22, 2020 - East Glacier Park, MT</h3>
+      <h3>July 18, 2020 - East Glacier Park, MT</h3>
     </div>
   )
 }
