@@ -21,7 +21,7 @@ const Accommodations = (props) => {
 
   return(
     <div className="top-margin text-align-center">
-      <h3>Accommodations in East Glacier fill up early. Find a place as soon as you can!</h3>
+      <h3>Accommodations in East Glacier fill up quickly. It is best to book early!</h3>
       <br></br>
       <div className="accommodations">
         <table className="accommodations__table">
