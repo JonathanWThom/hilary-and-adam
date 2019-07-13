@@ -1,22 +1,22 @@
-import target from "./images/target.jpg";
-import bedbathbeyond from "./images/bedbathbeyond.jpg";
 import amazon from "./images/amazon.jpg";
+import stjude from "./images/stjude.png";
+import travelersjoy from "./images/travelersjoy.png";
 
 const registries = [
   {
-    name: "Target",
-    url: "https://www.target.com/",
-    src: target,
+    name: "Traveler's Joy",
+    url: "https://www.travelersjoy.com/hilaryandadam",
+    src: travelersjoy,
+  },
+  {
+    name: "St. Jude's",
+    url: "http://fundraising.stjude.org/goto/syvertsonkauth",
+    src: stjude,
   },
   {
     name: "Amazon",
-    url: "https://www.amazon.com",
+    url: "https://www.amazon.com/wedding/share/syvertsonkauth",
     src: amazon,
-  },
-  {
-    name: "Bed Bath & Beyond",
-    url: "https://www.bedbathandbeyond.com/",
-    src: bedbathbeyond,
   }
 ]
 
