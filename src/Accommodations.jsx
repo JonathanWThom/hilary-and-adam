@@ -20,19 +20,23 @@ const Accommodations = (props) => {
   }
 
   return(
-    <div className="accommodations text-align-center top-margin">
-      <table className="accommodations__table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Cost</th>
-            <th>Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          { tableBody() }
-        </tbody>
-      </table>
+    <div className="top-margin text-align-center">
+      <h3>Accommodations in East Glacier fill up early. Find a place as soon as you can!</h3>
+      <br></br>
+      <div className="accommodations">
+        <table className="accommodations__table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Cost</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            { tableBody() }
+          </tbody>
+        </table>
+      </div>
     </div>
   )
 }
