@@ -24,7 +24,8 @@ const Photos = () => {
   const IMAGES = importAll(require.context('./images/website/', false, /\.(png|jpe?g|svg)$/));
   const PARSED_IMAGES = IMAGES.map(image => {
     const size = image.split(".jpg")[0].split(".")[0].slice(-2).split("");
-    return { src: image, width: parseInt(size[0]), height: parseInt(size[1]) };
+    const link = `http://da8tipofuthml.cloudfront.net/${image.split("/")[3].split(".")[0]}.jpg`
+    return { src: link, width: parseInt(size[0]), height: parseInt(size[1]) };
   })
 
   return (
