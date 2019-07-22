@@ -22,7 +22,7 @@ const Ceremony = (props) => {
         <iframe
           title="Map to The Summit Mountain Lodge"
           frameBorder="0"
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJPb-TCOiGaFMRUw84e-bRBFg&key=AIzaSyAZFvNwSQZiqtBmIO6CGR4AMJ5I_JEexVU"
+          src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJ2StxAomOaFMRZ4gj-vFx9wo&destination=place_id:ChIJPb-TCOiGaFMRUw84e-bRBFg&key=AIzaSyAZFvNwSQZiqtBmIO6CGR4AMJ5I_JEexVU"
           allowFullScreen>
         </iframe>
       </section>
