@@ -1,11 +1,5 @@
 const hotels = [
-  {
-    name: "Lone Elk Lodge",
-    website: "http://lonelklodge.com/",
-    notes: "We have blocked off rooms here. Contact Laura or Hilary Syvertson for details.",
-    cost: "$$-$$$$"
-  },
-  {
+ {
     name: "Glacier Park Lodge",
     website: "https://www.glacierparkcollection.com/lodging/glacier-park-lodge/",
     notes: "",
