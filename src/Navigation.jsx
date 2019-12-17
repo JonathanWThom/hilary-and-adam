@@ -7,6 +7,7 @@ import {
   HOME,
   PHOTOS,
   REGISTRY,
+  RSVP,
 } from "./Constants"
 
 const Navigation = (props) => {
@@ -26,6 +27,9 @@ const Navigation = (props) => {
         <h4 className={className(CEREMONY)} onClick={() => setPage(CEREMONY)}>
           Ceremony &amp; Reception
         </h4>
+        <h4 className={className(RSVP)} onClick={() => setPage(RSVP)}>
+          RSVP
+        </h4>
         <h4 className={className(ACCOMMODATIONS)} onClick={() => setPage(ACCOMMODATIONS)}>
           Accomodations
         </h4>
@@ -44,6 +48,7 @@ const Navigation = (props) => {
         <select value={page} onChange={e => setPage(e.target.value)}>
           <option value={HOME}>Home</option>
           <option value={CEREMONY}>Ceremony &amp; Reception</option>
+          <option value={RSVP}>RSVP</option>
           <option value={ACCOMMODATIONS}>Accomodations</option>
           <option value={ACTIVITIES}>Activities</option>
           <option value={REGISTRY}>Registry</option>
