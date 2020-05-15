@@ -4,7 +4,7 @@ import "./Ceremony.css";
 const Ceremony = (props) => {
   return(
     <div className="ceremony text-align-center">
-      <h3>Ceremony - July 18, 2020 at 4:30 pm</h3>
+      <h3>Ceremony - July 17, 2021 at 4:30 pm</h3>
       <h3>Lone Elk Lodge</h3>
       <section className="map__container">
         <iframe
