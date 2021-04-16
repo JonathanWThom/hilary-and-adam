@@ -31,7 +31,7 @@ const hotels = [
   },
   {
     name: "East Glacier Motel and Cabins",
-    website: "https://www.eastglaciermotelandcabins.com/",
+    website: "https://www.tripadvisor.com/Hotel_Review-g45152-d226502-Reviews-East_Glacier_Motel_Cabins-East_Glacier_Park_Montana.html",
     notes: "Call Shannon (406) 226-4402 for reservations",
     cost: "4 rooms with 2 queens at $180/night.\n4 rooms with singles at $150/night.",
   },
