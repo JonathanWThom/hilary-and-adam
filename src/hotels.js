@@ -18,12 +18,6 @@ const hotels = [
     cost: "$$$",
   },
   {
-    name: "Isaac Walton Inn",
-    website: "https://us01.iqwebbook.com/IWIMT618/~/",
-    notes: "Cabins and lodge rooms.",
-    cost: "$$-$$$",
-  },
-  {
     name: "East Glacier KOA",
     website: "https://koa.com/campgrounds/st-mary/",
     notes: "Cabins, RV, and tent sites available.",
@@ -32,50 +26,38 @@ const hotels = [
   {
     name: "St. Mary Campground",
     website: "https://www.recreation.gov/camping/campgrounds/232492",
-    notes: "",
+    notes: "Available to book Friday, May 28th.",
     cost: "$",
-  },
-  {
-    name: "Traveler's Rest Lodge",
-    website: "http://travelersrestlodge.net/deluxe-cabins.cfm",
-    notes: "Cabins",
-    cost: "$$",
-  },
-  {
-    name: "Jacobson's Cottages",
-    website: "http://www.jacobsonscottages.com/",
-    notes: "Cabins",
-    cost: "$$",
   },
   {
     name: "East Glacier Motel and Cabins",
     website: "https://www.eastglaciermotelandcabins.com/",
-    notes: "Cabins and rooms",
-    cost: "$$",
-  },
-  {
-    name: "Moutain Pine Hotel",
-    website: "https://www.mtnpine.com/book-your-stay-2",
-    notes: "Rooms",
-    cost: "$$",
+    notes: "Call Shannon (406) 226-4402 for reservations",
+    cost: "4 rooms with 2 queens at $180/night.\n4 rooms with singles at $150/night.",
   },
   {
     name: "Bear on the Roof Realty",
     website: "http://www.bearontheroof.com/",
-    notes: "Rental properties available",
+    notes: "Rental properties available.",
     cost: "$-$$$$",
   },
   {
     name: "AirBnB",
-    website: "ttps://www.airbnb.com/s/East-Glacier-Park-Village--MT--United-States/homes?query=East%20Glacier%20Park%20Village%2C%20MT%2C%20United%20States&place_id=ChIJf-MKmu2NaFMR0U2YbMroYRk&click_referer=t%3ASEE_ALL%7Csid%3A0a62a454-0528-4f03-96b8-c0a09165e7a0%7Cst%3AMAGAZINE_HOMES&title_type=MAGAZINE_HOMES&refinement_paths%5B%5D=%2Fhomes&search_type=SECTION_NAVIGATION&allow_override%5B%5D=&s_tag=aLrKre3x",
+    website: "https://www.airbnb.com/s/East-Glacier-Park-Village--MT--United-States/homes?query=East%20Glacier%20Park%20Village%2C%20MT%2C%20United%20States&place_id=ChIJf-MKmu2NaFMR0U2YbMroYRk&click_referer=t%3ASEE_ALL%7Csid%3A0a62a454-0528-4f03-96b8-c0a09165e7a0%7Cst%3AMAGAZINE_HOMES&title_type=MAGAZINE_HOMES&refinement_paths%5B%5D=%2Fhomes&search_type=SECTION_NAVIGATION&allow_override%5B%5D=&s_tag=aLrKre3x",
     notes: "",
     cost: "$$-$$$",
   },
   {
-    name: "VRBO",
-    website: "https://www.vrbo.com/search/keywords:east-glacier-park-mt-usa/arrival:2020-07-10/departure:2020-07-13?adultsCount=2&petIncluded=false",
+    name: "Circle R Motel",
+    website: "https://www.circlermotelmt.com",
     notes: "",
-    cost: "$$-$$$$"
+    cost: "2 rooms with 2 queens @ $150.27/night (tax included).\n4 singles @ $125.82/night (tax included)."
+  },
+  {
+    name: "Dancing Bears Inn",
+    website: "http://www.dancingbearsinn.com/",
+    notes: "1 room with 2 queen beds.\nCall Shannon (406) 226-4402 for reservations or book through Expedia.",
+    cost: "",
   }
 ];
 
