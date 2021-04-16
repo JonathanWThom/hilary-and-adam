@@ -2,8 +2,8 @@ const hotels = [
   {
     name: "Summit Mountain Lodge",
     website: "https://summitmtnlodge.com/lodging-glacier-national-park/glacier-national-park-cabins/",
-    notes: "There is a single unit cabin available.\nIt is currently booked through the wedding party, so if interested, contact Hilary.\nCost is $484.88 including lodging and taxes for two nights.",
-    cost: "$$$",
+    notes: "There is a single unit cabin available.\nIt is currently booked through the wedding party, so if interested, contact Hilary.",
+    cost: "Cost is $484.88 including lodging and taxes for two nights.",
   },
  {
     name: "Glacier Park Lodge",
