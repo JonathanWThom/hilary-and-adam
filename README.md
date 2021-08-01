@@ -1,6 +1,6 @@
 # Hilary and Adam Wedding Site
 
-Little React app I built for my sister-in-law's wedding : )
+Little React app I built for my sister-in-law's wedding 🥂
 
 [https://hilary-and-adam.com](https://hilary-and-adam.com)
 
